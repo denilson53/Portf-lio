@@ -1,0 +1,34 @@
+@use '../variables'
+
+#portfolio
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem
+    gap: 3rem
+
+.name
+    width: 100%
+    margin-bottom: 1em
+    color: variables.$text-color
+    font-size: 4.0rem
+    background: variables.$gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent       
+    display: inline
+    margin-left: 5px
+    opacity: 1
+    animation: pisca .7s infinite
+
+    @keyframes pisca 
+        0%, 100% 
+            opacity: 1
+        
+        50% 
+            opacity: 0
+
+
+
+@media only screen and (max-width: 900px)
+    .name
+        font-size: 2em
+        text-align: center
