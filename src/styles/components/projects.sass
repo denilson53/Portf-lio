@@ -1,5 +1,6 @@
 @use "../variables"
 
+
 .projetos 
     padding-top: 93px
 
@@ -62,6 +63,8 @@ a:hover
     cursor: pointer
     overflow: hidden
     transition: ease-in-out 0.3s
+    position: relative
+    margin: auto
 
 
 .pro div p 
@@ -94,6 +97,36 @@ a:hover
     gap: 29.5px
     width: 100%
     justify-content: center
+
+.centro
+    position: absolute
+
+.centro img
+    width: 45%
+    transform: rotate(+50deg)
+
+@media only screen and (max-width: 900px)
+
+    .projetos
+        text-align: center
+        display: flex
+        flex-direction: column
+
+
+    #projetos 
+        display: flex
+        justify-content: center
+
+
+    .projetos-itens 
+        flex-direction: column
+
+    .pro 
+        width: 100%
+
+
+    .centro img
+        width: 50%
 
 
 
